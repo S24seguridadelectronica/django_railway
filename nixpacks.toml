@@ -1,0 +1,2 @@
+[phases.start]
+cmd = "gunicorn nombre_de_tu_proyecto.wsgi:application --bind 0.0.0.0:$PORT"
