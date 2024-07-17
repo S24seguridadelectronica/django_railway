@@ -1,2 +1,6 @@
 [phases.start]
+<<<<<<< HEAD
 cmd = "gunicorn nombre_de_tu_proyecto.wsgi:application --bind 0.0.0.0:$PORT"
+=======
+cmd = "gunicorn mi_proyecto.wsgi:application --bind 0.0.0.0:$PORT"
+>>>>>>> 8fe405cc53492df297cd2f9fb3be5605f903b84d
