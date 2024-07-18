@@ -6,5 +6,6 @@ cmds = [
 [phases.start]
 cmd = "gunicorn django_proyect.wsgi:application --bind 0.0.0.0:$PORT"
 
-[phases.start]
-command = "python manage.py collectstatic --noinput && gunicorn django_proyect.wsgi:application --bind 0.0.0.0:$PORT"
+[phases]
+start = "gunicorn django_proyect.wsgi:application --bind 0.0.0.0:${PORT}"
+
