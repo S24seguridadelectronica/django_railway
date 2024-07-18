@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'whitenoise.runserver_nostatic'
+    'whitenoise.runserver_nostatic',  # Asegúrate de que haya una coma al final de esta línea
     'blog',  # Asegúrate de que 'blog' esté listado aquí
     'home',
 ]
