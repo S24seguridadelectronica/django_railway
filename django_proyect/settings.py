@@ -134,14 +134,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'blog/static'),
 ]
 
-<<<<<<< HEAD
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 ALLOWED_HOSTS = ['localhost','djangorailway-production-6a6d.up.railway.app']
-=======
-
-
-ALLOWED_HOSTS = ['localhost','djangorailway-production-6a6d.up.railway.app']
->>>>>>> 8fe405cc53492df297cd2f9fb3be5605f903b84d
