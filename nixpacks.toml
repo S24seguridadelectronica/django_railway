@@ -1,3 +1,7 @@
-[phases.start]
-cmd = "gunicorn django_proyect.wsgi:application --bind 0.0.0.0:$PORT && python manage.py collectstatic --noinput"
+[phases.build]
+cmds = [
+  "pip install -r requirements.txt"
+]
 
+[phases.start]
+cmd = "gunicorn django_proyect.wsgi:application --bind 0.0.0.0:$PORT"
