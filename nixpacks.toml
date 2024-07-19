@@ -4,8 +4,6 @@ cmds = [
 ]
 
 [phases.start]
-cmd = "gunicorn django_proyect.wsgi:application --bind 0.0.0.0:$PORT"
-
-[phases]
-start = "gunicorn django_proyect.wsgi:application --bind 0.0.0.0:${PORT}"
-
+cmds = [
+  "gunicorn django_proyect.wsgi:application --bind 0.0.0.0:$PORT"
+]
