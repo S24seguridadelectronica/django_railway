@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-yt4^5cv!^&@6jhy$sy2^me#-q5yez8td0ltbhbbka2n64r5%2='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'djangorailway-production-6a6d.up.railway.app', '.yourdomain.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -140,4 +140,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-ALLOWED_HOSTS = ['localhost','djangorailway-production-6a6d.up.railway.app']
+ALLOWED_HOSTS = ['localhost','https://djangorailway-production-6a6d.up.railway.app']
