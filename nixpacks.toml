@@ -1,10 +1,19 @@
 [phases.setup]
 runtime = "python311"
-install = "python -m venv --copies /opt/venv && . /opt/venv/bin/activate && pip install -r requirements.txt"
+install = """
+  python -m venv --copies /opt/venv &&
+  . /opt/venv/bin/activate &&
+  pip install -r requirements.txt
+"""
 
 [phases.build]
-build = "pip install -r requirements.txt"
+build = """
+  . /opt/venv/bin/activate &&
+  pip install -r requirements.txt
+"""
 
 [phases.start]
-start = "gunicorn django_proyect.wsgi:application"
-
+start = """
+  . /opt/venv/bin/activate &&
+  gunicorn django_proyect.wsgi:application
+"""
