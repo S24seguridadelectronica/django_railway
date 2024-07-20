@@ -1,1 +1,1 @@
-web: python manage.py collectstatic --noinput && gunicorn django_proyect.wsgi:application
+web: . /opt/venv/bin/activate && gunicorn django_proyect.wsgi:application
